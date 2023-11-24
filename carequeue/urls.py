@@ -16,10 +16,10 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
-from app.views import parse_text, home
+from app.views import parse_audio, home
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('parse-text/', parse_text),
+    path('parse-audio/', parse_audio),
     path('', home, name='home')
 ]
