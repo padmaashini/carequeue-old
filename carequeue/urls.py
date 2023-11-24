@@ -16,6 +16,10 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
+from app.views import parse_text, home
+
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('parse-text/', parse_text),
+    path('', home, name='home')
 ]
